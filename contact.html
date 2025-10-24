@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <style>
+    .contact-container {
+      max-width: 1100px;
+      margin: auto;
+      background: rgb(255, 255, 255);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .side-by-side {
+      display: flex;
+      gap: 30px;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .map,
+    .form-wrapper {
+      flex: 1 1 450px;
+      min-width: 300px;
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    input,
+    textarea {
+      margin-bottom: 15px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 15px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #0ecb1b;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 15px;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #4a4b4c;
+    }
+
+
+    .map {
+      text-align: center;
+    }
+
+    iframe {
+      width: 100%;
+      height: 320px;
+      border: 0;
+      border-radius: 8px;
+    }
+
+
+    .contact-links {
+      text-align: center;
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .contact-links a,
+    .contact-links span {
+      font-size: 15px;
+      color: #5e5f60;
+      text-decoration: none;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="index.html"><img src="media/logo 2025-10-20 at 23.20.39_3da4c395.jpg" alt="" height="40"
+        width="100"></a>
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav ms-auto text-end">
+        <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+        <li class="nav-item"><a class="nav-link" href="fuelprice.html">Fuel Prices</a></li>
+        <li class="nav-item"><a class="nav-link" href="compare.html">Compare Cars</a></li>
+        <li class="nav-item"><a class="nav-link" href="maintenance.html">Maintenance</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <br><br><br><br>
+  <div class="contact-container">
+    <div class="side-by-side">
+
+      <div class="form-wrapper">
+        <h2>CONTACT US</h2>
+        <div class="contact-links">
+
+          <a href="https://wa.me/+917356155224"><i class="fa-brands fa-whatsapp"></i></a>
+          <span>|</span>
+
+          <a href="tel:+917356155224"><i class="fa-solid fa-phone"></i></a>
+          <span>|</span>
+          <a href="mailto:lisanop4444@gmail.com">lisanop4444@gmail.com</a>
+        </div>
+        <form id="contact-form">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="map">
+        <h1>Our Location</h1>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d448.3624545479396!2d76.17762574959872!3d10.8458962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7c7000991b6ef%3A0x2cf8ab85868fc010!2sOP%20ABDUL%20LATHEEF!5e1!3m2!1sen!2sin!4v1759466092471!5m2!1sen!2sin"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+  </div>
+  <br><br><br><br>
+  
+   <div class="social-buttons-container">
+    <a class="social-button whatsapp-bg" href="https://wa.me/917356155224" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <img src="media/whatsapp-logo.svg" alt="WhatsApp Chat" style="width: 50px; height: 50px">
+    </a>
+    <a class="social-button facebook-bg" href="https://www.facebook.com/profile.php?id=61553914491580" target="_blank" rel="noopener" aria-label="Share on Facebook">
+      <img src="media/fb-logo.png" alt="Facebook Share" style="width: 50px; height: 50px">
+    </a>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center text-lg-start mt-auto">
+    <div class="container p-4">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">About</h5>
+          <p>
+            This is a simple website which is used to Calculate Mileage of the vehicle and aslo to know the price
+            details
+            of each cities and can aslo compare vehicle.
+          </p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Quick Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+            <li><a href="calculator.html" class="text-light text-decoration-none">Calculate</a></li>
+            <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Contact</h5>
+          <p>Email: lisanop4444@email.com</p>
+          <p>Phone: +91 7356155224</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="text-center p-3 bg-secondary">
+      © 2025 MyWebsite. All Rights Reserved.
+    </div>
+  </footer>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("0B5PlJmMV24ZCvSCB"); // public key
+    })();
+
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+      event.preventDefault();
+      emailjs.sendForm("service_tvmzpu5", "template_fg5axel", this).then(function () {
+        alert("Message sent successfully!");
+      }, function (error) {
+        alert("Message failed. Please try again.");
+        console.error(error);
+      });
+    });
+  </script>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

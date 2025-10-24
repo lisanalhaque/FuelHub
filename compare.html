@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Car Comparison</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="index.html"><img src="media/logo 2025-10-20 at 23.20.39_3da4c395.jpg" alt="" height="40"
+        width="100"></a>
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav ms-auto text-end">
+        <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+        <li class="nav-item"><a class="nav-link" href="fuelprice.html">Fuel Prices</a></li>
+        <li class="nav-item"><a class="nav-link" href="compare.html">Compare Cars</a></li>
+        <li class="nav-item"><a class="nav-link" href="maintenance.html">Maintenance</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container mt-5">
+    <h2 style="font-family: fantasy; color: white;">Compare Cars</h2>
+    <div class="row mb-3">
+      <div class="col-md-5">
+        <select id="car1" class="form-select"></select>
+      </div>
+      <div class="col-md-2 text-center">
+        <button id="swapBtn" class="btn btn-secondary">Swap</button>
+      </div>
+      <div class="col-md-5">
+        <select id="car2" class="form-select"></select>
+      </div>
+    </div>
+    <div class="row" id="comparisonRow">
+      <div class="col-md-6" id="car1Card"></div>
+      <div class="col-md-6" id="car2Card"></div>
+    </div>
+    <button id="resetCompare" class="btn btn-outline-danger mt-3">Reset</button>
+
+
+
+  </div>
+  <div class="social-buttons-container">
+    <a class="social-button whatsapp-bg" href="https://wa.me/917356155224" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <img src="media/whatsapp-logo.svg" alt="WhatsApp Chat" style="width: 50px; height: 50px">
+    </a>
+    <a class="social-button facebook-bg" href="https://www.facebook.com/profile.php?id=61553914491580" target="_blank" rel="noopener" aria-label="Share on Facebook">
+      <img src="media/fb-logo.png" alt="Facebook Share" style="width: 50px; height: 50px">
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <br><br>
+  <footer class="bg-dark text-light text-center text-lg-start mt-auto">
+    <div class="container p-4">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">About</h5>
+          <p>
+            This is a simple website which is used to Calculate Mileage of the vehicle and aslo to know the price
+            details
+            of each cities and can aslo compare vehicle.
+          </p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Quick Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+            <li><a href="calculator.html" class="text-light text-decoration-none">Calculate</a></li>
+            <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Contact</h5>
+          <p>Email: lisanop4444@email.com</p>
+          <p>Phone: +91 7356155224</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="text-center p-3 bg-secondary">
+      © 2025 MyWebsite. All Rights Reserved.
+    </div>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

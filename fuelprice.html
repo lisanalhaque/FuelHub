@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Fuel Price Tracker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navigation bar (same as other pages) -->
+  <nav class="navbar navbar-expand-lg ">
+    <a class="navbar-brand" href="index.html"><img src="media/logo 2025-10-20 at 23.20.39_3da4c395.jpg" alt="" height="40"
+        width="100"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav ms-auto text-end">
+        <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+        <li class="nav-item"><a class="nav-link" href="fuelprice.html">Fuel Prices</a></li>
+        <li class="nav-item"><a class="nav-link" href="compare.html">Compare Cars</a></li>
+        <li class="nav-item"><a class="nav-link" href="maintenance.html">Maintenance</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <br><br>
+  <div class="container mt-4">
+    <h2 style="font-family: fantasy; color: white;">Fuel Prices by City</h2>
+    <select id="cityDropdown" class="form-select mb-3"></select>
+    <div id="priceCard" class="mb-3"></div>
+    <button id="compareBtn" class="btn btn-info mb-3">Compare with Last Week</button>
+    <div id="compareResult"></div>
+
+
+  </div>
+  <div class="social-buttons-container">
+    <a class="social-button whatsapp-bg" href="https://wa.me/917356155224" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <img src="media/whatsapp-logo.svg" alt="WhatsApp Chat" style="width: 50px; height: 50px">
+    </a>
+    <a class="social-button facebook-bg" href="https://www.facebook.com/profile.php?id=61553914491580" target="_blank" rel="noopener" aria-label="Share on Facebook">
+      <img src="media/fb-logo.png" alt="Facebook Share" style="width: 50px; height: 50px">
+    </a>
+  </div>
+  <br><br>
+  <!-- Footer -->
+  <!-- Footer -->
+  <footer class="bg-dark text-light text-center text-lg-start mt-auto">
+    <div class="container p-4">
+      <div class="row">
+        <!-- About Section -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">About</h5>
+          <p>
+            This is a simple website which is used to Calculate Mileage of the vehicle and aslo to know the price
+            details
+            of each cities and can aslo compare vehicle.
+          </p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Quick Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+            <li><a href="calculator.html" class="text-light text-decoration-none">Calculate</a></li>
+            <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Contact</h5>
+          <p>Email: lisanop4444@email.com</p>
+          <p>Phone: +91 7356155224</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="text-center p-3 bg-secondary">
+      © 2025 MyWebsite. All Rights Reserved.
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
